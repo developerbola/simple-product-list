@@ -138,7 +138,7 @@ const Categories = () => {
                 {/* DELETE */}
                 <Dialog
                   open={deleteId === cat.id}
-                  onOpenChange={() => setDeleteId(null)}
+                  onOpenChange={(open) => !open && setDeleteId(null)}
                 >
                   <DialogTrigger asChild>
                     <Button

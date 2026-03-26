@@ -309,7 +309,7 @@ const Products = () => {
 
                 <Dialog
                   open={deleteId === pr.id}
-                  onOpenChange={() => setDeleteId(null)}
+                  onOpenChange={(open) => !open && setDeleteId(null)}
                 >
                   <DialogTrigger asChild>
                     <Button
