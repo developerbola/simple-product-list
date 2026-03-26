@@ -5,7 +5,7 @@ import Categories from "./components/Categories";
 const App = () => {
   return (
     <div className="min-h-svh flex items-center justify-center">
-      <main className="h-[70svh] w-[45%] ">
+      <main className="h-[70svh] w-[80%] ">
         <Tabs defaultValue="products" className="size-full">
           <TabsList>
             <TabsTrigger value="products">Products</TabsTrigger>
