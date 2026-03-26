@@ -49,7 +49,7 @@ const Categories = () => {
     addCategory(name);
     setName("");
     refreshCategories();
-    setAddDialogOpen(false); // Add dialogni yopish
+    setAddDialogOpen(false);
   };
 
   const handleUpdate = () => {
@@ -58,7 +58,7 @@ const Categories = () => {
     setEditingCategory(null);
     setName("");
     refreshCategories();
-    setEditDialogOpen(false); // Edit dialogni yopish
+    setEditDialogOpen(false);
   };
 
   return (
@@ -113,7 +113,7 @@ const Categories = () => {
                       onClick={() => {
                         setEditingCategory(cat);
                         setName(cat.name);
-                        setEditDialogOpen(true); // Edit dialogni ochish
+                        setEditDialogOpen(true);
                       }}
                     >
                       <IconEdit size={16} />
